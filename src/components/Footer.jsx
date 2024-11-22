@@ -10,7 +10,7 @@ function Footer() {
             <div className="flex justify-center">
               <img
                 className="w-28 mr-4"
-                src="/public/images/FMI-LOGO.png"
+                src="/images/FMI-LOGO.png"
                 alt="logo"
               />
             </div>

@@ -26,13 +26,10 @@ const navigation = [
   { name: "Contact Us", href: "/contact" },
 ];
 
-const MobileMenu = () => {
+// eslint-disable-next-line react/prop-types
+const MobileMenu = ({ handleLinkClick }) => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const location = useLocation();
-
-  const handleLinkClick = () => {
-    setDropdownOpen(null); // Close dropdown when a link is clicked
-  };
 
   const toggleDropdown = (index) => {
     setDropdownOpen(dropdownOpen === index ? null : index);

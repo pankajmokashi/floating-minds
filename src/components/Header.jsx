@@ -7,7 +7,6 @@ import SocialLinks from "./SocialLinks";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(null);
   const disclosureRef = useRef(null);
 
   useEffect(() => {
@@ -17,7 +16,6 @@ const Header = () => {
         !disclosureRef.current.contains(event.target)
       ) {
         setOpen(false);
-        setDropdownOpen(null);
       }
     };
 
@@ -29,11 +27,6 @@ const Header = () => {
 
   const handleLinkClick = () => {
     setOpen(false);
-    setDropdownOpen(null);
-  };
-
-  const toggleDropdown = (index) => {
-    setDropdownOpen(dropdownOpen === index ? null : index);
   };
 
   return (
@@ -57,11 +50,7 @@ const Header = () => {
           </div>
           <div className="flex flex-1 items-center justify-between sm:items-stretch">
             <Logo />
-            <NavLinks
-              dropdownOpen={dropdownOpen}
-              toggleDropdown={toggleDropdown}
-              handleLinkClick={handleLinkClick}
-            />
+            <NavLinks handleLinkClick={handleLinkClick} />
             <div className="hidden absolute inset-y-0 right-0 lg:flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
               <div className="flex gap-4">
                 <SocialLinks />
@@ -71,13 +60,7 @@ const Header = () => {
         </div>
       </div>
 
-      {open && (
-        <MobileMenu
-          dropdownOpen={dropdownOpen}
-          toggleDropdown={toggleDropdown}
-          handleLinkClick={handleLinkClick}
-        />
-      )}
+      {open && <MobileMenu handleLinkClick={handleLinkClick} />}
     </nav>
   );
 };

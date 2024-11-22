@@ -125,6 +125,28 @@ function Home() {
             <CourseCards />
           </div>
         </div>
+        <div className="mt-16 mx-auto max-w-screen-2xl px-4 sm:px-8 md:px-16">
+          <div className="bg-[#3AA6B9] rounded-xl text-center px-8 py-16">
+            <div>
+              <div className="flex justify-center mb-12">
+                <div className="w-20 h-1 bg-white rounded-full"></div>
+              </div>
+              <h4 className="text-white text-2xl sm:text-3xl font-semibold">
+                Wish to know more about admissions and updates? Subscribe now!
+              </h4>
+              <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <input
+                  type="email"
+                  className="min-w-full xm:min-w-[300px] px-4 py-3 font-medium rounded-xl outline-none"
+                  placeholder="Email"
+                />
+                <button className="min-w-full xm:min-w-[300px] sm:min-w-0 px-6 py-3 rounded-xl h-full bg-white text-[#6EC1E4] font-semibold">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

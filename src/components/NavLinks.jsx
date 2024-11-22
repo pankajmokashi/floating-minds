@@ -52,7 +52,7 @@ const NavLinks = () => {
                 className={`rounded-md text-sm font-medium flex gap-1 items-center ${
                   location.pathname.startsWith("/courses")
                     ? "text-[#6EC1E4]"
-                    : "text-black hover:text-[#6EC1E4]"
+                    : "text-black sm:hover:text-[#6EC1E4]"
                 }`}
               >
                 <span>{item.name}</span>
@@ -68,7 +68,7 @@ const NavLinks = () => {
                         className={`block px-4 py-2 text-sm font-medium hover:bg-gray-100 hover:text-[#6EC1E4] text-center ${
                           location.pathname === child.href
                             ? "text-[#6EC1E4]"
-                            : "text-black"
+                            : "text-black sm:hover:text-[#6EC1E4]"
                         }`}
                       >
                         {child.name}
@@ -85,7 +85,7 @@ const NavLinks = () => {
               className={`rounded-md px-3 py-2 text-sm font-medium ${
                 item.href === location.pathname
                   ? "text-blue-400"
-                  : "text-black hover:text-blue-400"
+                  : "text-black sm:hover:text-[#6EC1E4]"
               }`}
             >
               {item.name}

@@ -46,7 +46,7 @@ const MobileMenu = ({ handleLinkClick }) => {
                 className={`w-full rounded-md px-3 py-2 text-base font-medium flex items-center justify-center gap-2 ${
                   location.pathname.startsWith("/courses")
                     ? "text-[#6EC1E4]"
-                    : "text-black hover:text-[#6EC1E4]"
+                    : "text-black hover:bg-gray-100 sm:hover:text-[#6EC1E4]"
                 }`}
               >
                 <span>Courses</span>
@@ -59,10 +59,10 @@ const MobileMenu = ({ handleLinkClick }) => {
                       key={child.name}
                       to={child.href}
                       onClick={handleLinkClick}
-                      className={`block px-4 py-2 text-base font-medium hover:bg-gray-100 hover:text-[#6EC1E4] text-center ${
+                      className={`block px-4 py-2 text-base font-medium hover:bg-gray-100 text-center ${
                         location.pathname === child.href
                           ? "text-[#6EC1E4]"
-                          : "text-black"
+                          : "text-black hover:bg-gray-100 sm:hover:text-[#6EC1E4]"
                       }`}
                     >
                       {child.name}
@@ -79,7 +79,7 @@ const MobileMenu = ({ handleLinkClick }) => {
               className={`block w-full rounded-md px-3 py-2 text-base font-medium text-center ${
                 item.href === location.pathname
                   ? "text-[#6EC1E4]"
-                  : "text-black hover:text-[#6EC1E4] hover:bg-slate-50"
+                  : "text-black hover:bg-slate-100 sm:hover:text-[#6EC1E4]"
               }`}
             >
               {item.name}

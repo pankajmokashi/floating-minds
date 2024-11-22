@@ -51,11 +51,11 @@ function CourseCards() {
               alt={course.name}
             />
           </div>
-          <div className="px-4 py-6">
+          <div className="px-3 sm:px-4 py-4">
             <h6 className="text-center pb-2 text-xl sm:text-2xl font-semibold">
               {course.name}
             </h6>
-            <p className="text-xs xm:text-sm sm:text-xs md:text-sm lg:text-xs xl:text-sm line-clamp-5">
+            <p className="text-sm lg:text-xs xl:text-sm line-clamp-6">
               {course.desc}
             </p>
             <div className="mt-2 flex justify-center">

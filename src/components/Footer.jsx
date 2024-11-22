@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import SocialLinks from "./SocialLinks";
+// import GoogleMaps from "./GoogleMaps";
 
 function Footer() {
   return (
@@ -30,6 +31,16 @@ function Footer() {
                 Office No 203, 2nd Floor, Gandharva Capital, above Hotel
                 Kolhapuri, near Sahyadri Hospital, Bhosale Nagar, Hadapsar,
                 Pune, Maharashtra 411028
+              </div>
+              <div>
+                {/* <GoogleMaps /> */}
+                <a
+                  href="https://maps.app.goo.gl/Wp7mVKezMktHo5ek6"
+                  target="_blank"
+                  className="text-blue-600 text-sm underline"
+                >
+                  View on google maps
+                </a>
               </div>
             </div>
             <div className="lg:col-span-2">

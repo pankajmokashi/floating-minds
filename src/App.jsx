@@ -12,6 +12,7 @@ import DigitalMarketing from "./pages/Courses/DigitalMarketing";
 import "../src/App.css";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Services from "./pages/Services";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               element={<DigitalMarketing />}
             />
           </Route>
+          <Route path="/services" element={<Services />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/academics" element={<Academics />} />
           <Route path="/contact" element={<ContactUs />} />

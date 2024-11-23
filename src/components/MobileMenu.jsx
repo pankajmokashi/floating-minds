@@ -21,6 +21,7 @@ const navigation = [
       },
     ],
   },
+  { name: "Services", href: "/services" },
   { name: "Blogs", href: "/blogs" },
   { name: "Academics", href: "/academics" },
   { name: "Contact Us", href: "/contact" },

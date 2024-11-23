@@ -1,10 +1,11 @@
-// const url = "https://maps.app.goo.gl/Wp7mVKezMktHo5ek6";
-
 function GoogleMaps() {
+  const apiKey = import.meta.env.VITE_API_KEY;
+  const url = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Floating+Minds+Infotech`;
+
   return (
     <div>
       <iframe
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDv15hiE1yEtvahl6HFPLhBZzRN9Zdbc7U&q=Floating+Minds+Infotech"
+        src={url}
         width="200"
         height="200"
         allowFullScreen

@@ -139,6 +139,7 @@ function Home() {
                   type="email"
                   className="min-w-full xm:min-w-[300px] px-4 py-3 font-medium rounded-xl outline-none"
                   placeholder="Email"
+                  required
                 />
                 <button className="min-w-full xm:min-w-[300px] sm:min-w-0 px-6 py-3 rounded-xl h-full bg-white text-[#6EC1E4] font-semibold">
                   Submit

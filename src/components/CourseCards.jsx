@@ -44,9 +44,9 @@ function CourseCards() {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg::gap-12">
       {courses.map((course, ind) => (
         <div key={ind} className="card rounded-md max-w-sm mx-auto">
-          <div className="">
+          <div className="mx-auto">
             <img
-              className="w-full rounded-t-md aspect-video"
+              className="w-full rounded-t-md aspect-16/10"
               src={course.img}
               alt={course.name}
             />

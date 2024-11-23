@@ -7,6 +7,9 @@ export default {
         7: "7",
       },
       screens: { xm: "450px" },
+      aspectRatio: {
+        "16/10": "16/10",
+      },
     },
   },
   plugins: [],

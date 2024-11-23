@@ -4,7 +4,7 @@ import SocialLinks from "./SocialLinks";
 
 function Footer() {
   return (
-    <div className="mt-8">
+    <footer className="mt-8">
       <div className="mx-auto max-w-screen-2xl px-4 sm:px-8 md:px-16 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-[#454f5e]">
           <div className="sm:col-span-1">
@@ -73,7 +73,7 @@ function Footer() {
           Infotech.
         </p>
       </div>
-    </div>
+    </footer>
   );
 }
 

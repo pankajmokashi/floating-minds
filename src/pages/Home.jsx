@@ -22,11 +22,11 @@ function Home() {
   }, []);
 
   return (
-    <div className="">
-      <div className="mt-2 sm:mt-8">
+    <main>
+      <section className="mt-2 sm:mt-8">
         <img className="w-full" src="/images/image1.jpg" alt="header-image" />
-      </div>
-      <div className="bg-white mt-2 sm:mt-8 py-16">
+      </section>
+      <section className="bg-white mt-2 sm:mt-8 py-16">
         <div className="mx-auto max-w-screen-2xl px-4 sm:px-8 md:px-16">
           <div>
             <h1 className="text-3xl sm:text-5xl font-bold text-center mb-8 sm:mb-12 text-[#24A9B2]">
@@ -110,10 +110,10 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div className="bg-white mt-2 sm:mt-8 py-16">
-        <div className="mx-auto max-w-screen-2xl px-4 sm:px-8 md:px-16">
+        <section className="mx-auto max-w-screen-2xl px-4 sm:px-8 md:px-16">
           <div className="text-center">
             <h3 className="text-3xl font-bold mb-4">Floating Minds Infotech</h3>
             <h4 className="text-2xl sm:text-5xl mb-16">
@@ -124,8 +124,8 @@ function Home() {
             <h3 className="text-3xl text-center mb-8">Our Popular Courses</h3>
             <CourseCards />
           </div>
-        </div>
-        <div className="mt-16 mx-auto max-w-screen-2xl px-4 sm:px-8 md:px-16">
+        </section>
+        <section className="mt-16 mx-auto max-w-screen-2xl px-4 sm:px-8 md:px-16">
           <div className="bg-[#3AA6B9] rounded-xl text-center px-8 py-16">
             <div>
               <div className="flex justify-center mb-12">
@@ -147,9 +147,9 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
   );
 }
 

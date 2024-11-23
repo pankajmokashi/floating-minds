@@ -40,7 +40,7 @@ const NavLinks = () => {
 
   return (
     <div className="hidden sm:ml-6 md:flex items-center">
-      <div className="flex space-x-3 lg:space-x-4">
+      <div className="flex lg:space-x-3">
         {navigation.map((item, index) =>
           item.children ? (
             <div

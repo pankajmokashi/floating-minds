@@ -33,7 +33,7 @@ function About() {
                 Best IT Training Institute in Hadapar, Pune
               </h2>
               <p className="text-sm md:text-base text-[#454f5e]">
-                &quot;Welcome to Floating Minds Infotech, the leading IT
+                Welcome to Floating Minds Infotech, the leading IT
                 training institute in Hadapsar, Pune. With a commitment to
                 excellence and a passion for nurturing talent, we stand as the
                 foremost destination for IT enthusiasts seeking top-tier
@@ -57,7 +57,7 @@ function About() {
                 potential. Join us at Floating Minds Infotech and embark on a
                 transformative journey towards a rewarding career in IT.
                 Experience the difference of learning with the best and discover
-                endless possibilities for success.&quot;
+                endless possibilities for success.
               </p>
             </div>
             <GrowthChart />

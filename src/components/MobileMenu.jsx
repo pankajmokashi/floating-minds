@@ -88,7 +88,7 @@ const MobileMenu = ({ handleLinkClick }) => {
           )
         )}
         <div className="flex justify-center pt-4">
-          <div className="flex gap-4 xm:gap-8">
+          <div className="flex gap-6 xm:gap-8">
             <SocialLinks />
           </div>
         </div>

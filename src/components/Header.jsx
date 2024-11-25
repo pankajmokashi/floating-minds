@@ -52,7 +52,7 @@ const Header = () => {
             <Logo />
             <NavLinks handleLinkClick={handleLinkClick} />
             <div className="hidden absolute inset-y-0 right-0 lg:flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
-              <div className="flex gap-4">
+              <div className="flex gap-5">
                 <SocialLinks />
               </div>
             </div>

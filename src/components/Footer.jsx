@@ -8,12 +8,8 @@ function Footer() {
       <div className="mx-auto max-w-screen-2xl px-4 sm:px-8 md:px-16 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-[#454f5e]">
           <div className="sm:col-span-1">
-            <div className="flex justify-center">
-              <img
-                className="w-28 mr-4"
-                src="/images/FMI-LOGO.png"
-                alt="logo"
-              />
+            <div className="max-w-xl flex justify-center">
+              <img className="w-28" src="/images/FMI-LOGO.png" alt="logo" />
             </div>
 
             <p className="mx-auto text-center sm:text-left sm:mx-0 max-w-xl text-sm xm:text-base lg:text-sm xl:text-base">
@@ -63,7 +59,7 @@ function Footer() {
             </Link>
           </div>
           <div className="lg:absolute lg:right-0 lg:mr-8">
-            <div className="flex gap-4 xm:gap-8 sm:gap-4">
+            <div className="flex gap-6 xm:gap-8 sm:gap-6">
               <SocialLinks />
             </div>
           </div>

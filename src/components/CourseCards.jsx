@@ -46,7 +46,7 @@ function CourseCards() {
         <div key={ind} className="card rounded-md max-w-sm mx-auto">
           <div className="mx-auto">
             <img
-              className="w-full rounded-t-md aspect-16/10"
+              className="w-full rounded-t-md aspect-16/10 hover:scale-90 transition-all"
               src={course.img}
               alt={course.name}
             />
